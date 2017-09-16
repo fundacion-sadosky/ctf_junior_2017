@@ -10,6 +10,8 @@ Para reproducir el ejemplo mostrado es necesario descargar este repositorio que 
 
 	git clone https://github.com/fundacion-sadosky/ctf_junior_2017
 
+O alternativamente, se puede descargar como zip desde: https://github.com/fundacion-sadosky/ctf_junior_2017/archive/master.zip
+
 
 Definicion
 ==========
