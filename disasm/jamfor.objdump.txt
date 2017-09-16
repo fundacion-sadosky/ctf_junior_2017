@@ -1,0 +1,320 @@
+
+jamfor:     file format elf32-i386
+
+
+Disassembly of section .text:
+
+080480b8 <.text>:
+ 80480b8:	55                   	push   ebp
+ 80480b9:	89 e5                	mov    ebp,esp
+ 80480bb:	83 ec 04             	sub    esp,0x4
+ 80480be:	c7 45 fc 00 00 00 00 	mov    DWORD PTR [ebp-0x4],0x0
+ 80480c5:	eb 04                	jmp    0x80480cb
+ 80480c7:	83 45 fc 01          	add    DWORD PTR [ebp-0x4],0x1
+ 80480cb:	8b 55 fc             	mov    edx,DWORD PTR [ebp-0x4]
+ 80480ce:	8b 45 08             	mov    eax,DWORD PTR [ebp+0x8]
+ 80480d1:	01 d0                	add    eax,edx
+ 80480d3:	0f b6 00             	movzx  eax,BYTE PTR [eax]
+ 80480d6:	84 c0                	test   al,al
+ 80480d8:	75 ed                	jne    0x80480c7
+ 80480da:	8b 45 fc             	mov    eax,DWORD PTR [ebp-0x4]
+ 80480dd:	c9                   	leave  
+ 80480de:	c3                   	ret    
+ 80480df:	55                   	push   ebp
+ 80480e0:	89 e5                	mov    ebp,esp
+ 80480e2:	83 ec 08             	sub    esp,0x8
+ 80480e5:	8b 45 0c             	mov    eax,DWORD PTR [ebp+0xc]
+ 80480e8:	88 45 f8             	mov    BYTE PTR [ebp-0x8],al
+ 80480eb:	c7 45 fc 00 00 00 00 	mov    DWORD PTR [ebp-0x4],0x0
+ 80480f2:	eb 04                	jmp    0x80480f8
+ 80480f4:	83 45 fc 01          	add    DWORD PTR [ebp-0x4],0x1
+ 80480f8:	8b 55 fc             	mov    edx,DWORD PTR [ebp-0x4]
+ 80480fb:	8b 45 08             	mov    eax,DWORD PTR [ebp+0x8]
+ 80480fe:	01 d0                	add    eax,edx
+ 8048100:	0f b6 00             	movzx  eax,BYTE PTR [eax]
+ 8048103:	3a 45 f8             	cmp    al,BYTE PTR [ebp-0x8]
+ 8048106:	74 06                	je     0x804810e
+ 8048108:	83 7d fc 1f          	cmp    DWORD PTR [ebp-0x4],0x1f
+ 804810c:	7e e6                	jle    0x80480f4
+ 804810e:	8b 45 fc             	mov    eax,DWORD PTR [ebp-0x4]
+ 8048111:	c9                   	leave  
+ 8048112:	c3                   	ret    
+ 8048113:	55                   	push   ebp
+ 8048114:	89 e5                	mov    ebp,esp
+ 8048116:	83 ec 04             	sub    esp,0x4
+ 8048119:	c7 45 fc 00 00 00 00 	mov    DWORD PTR [ebp-0x4],0x0
+ 8048120:	eb 04                	jmp    0x8048126
+ 8048122:	83 45 fc 01          	add    DWORD PTR [ebp-0x4],0x1
+ 8048126:	8b 55 fc             	mov    edx,DWORD PTR [ebp-0x4]
+ 8048129:	8b 45 08             	mov    eax,DWORD PTR [ebp+0x8]
+ 804812c:	01 d0                	add    eax,edx
+ 804812e:	0f b6 10             	movzx  edx,BYTE PTR [eax]
+ 8048131:	8b 4d fc             	mov    ecx,DWORD PTR [ebp-0x4]
+ 8048134:	8b 45 0c             	mov    eax,DWORD PTR [ebp+0xc]
+ 8048137:	01 c8                	add    eax,ecx
+ 8048139:	0f b6 00             	movzx  eax,BYTE PTR [eax]
+ 804813c:	38 c2                	cmp    dl,al
+ 804813e:	75 06                	jne    0x8048146
+ 8048140:	83 7d fc 1f          	cmp    DWORD PTR [ebp-0x4],0x1f
+ 8048144:	7e dc                	jle    0x8048122
+ 8048146:	83 7d fc 1f          	cmp    DWORD PTR [ebp-0x4],0x1f
+ 804814a:	0f 9f c0             	setg   al
+ 804814d:	0f b6 c0             	movzx  eax,al
+ 8048150:	c9                   	leave  
+ 8048151:	c3                   	ret    
+ 8048152:	55                   	push   ebp
+ 8048153:	89 e5                	mov    ebp,esp
+ 8048155:	83 ec 04             	sub    esp,0x4
+ 8048158:	c7 45 fc 00 00 00 00 	mov    DWORD PTR [ebp-0x4],0x0
+ 804815f:	eb 19                	jmp    0x804817a
+ 8048161:	8b 55 fc             	mov    edx,DWORD PTR [ebp-0x4]
+ 8048164:	8b 45 0c             	mov    eax,DWORD PTR [ebp+0xc]
+ 8048167:	01 c2                	add    edx,eax
+ 8048169:	8b 4d fc             	mov    ecx,DWORD PTR [ebp-0x4]
+ 804816c:	8b 45 08             	mov    eax,DWORD PTR [ebp+0x8]
+ 804816f:	01 c8                	add    eax,ecx
+ 8048171:	0f b6 00             	movzx  eax,BYTE PTR [eax]
+ 8048174:	88 02                	mov    BYTE PTR [edx],al
+ 8048176:	83 45 fc 01          	add    DWORD PTR [ebp-0x4],0x1
+ 804817a:	83 7d fc 1f          	cmp    DWORD PTR [ebp-0x4],0x1f
+ 804817e:	7e e1                	jle    0x8048161
+ 8048180:	8b 45 0c             	mov    eax,DWORD PTR [ebp+0xc]
+ 8048183:	83 c0 20             	add    eax,0x20
+ 8048186:	c6 00 00             	mov    BYTE PTR [eax],0x0
+ 8048189:	90                   	nop
+ 804818a:	c9                   	leave  
+ 804818b:	c3                   	ret    
+ 804818c:	55                   	push   ebp
+ 804818d:	89 e5                	mov    ebp,esp
+ 804818f:	83 ec 04             	sub    esp,0x4
+ 8048192:	c7 45 fc 00 00 00 00 	mov    DWORD PTR [ebp-0x4],0x0
+ 8048199:	eb 0f                	jmp    0x80481aa
+ 804819b:	8b 55 fc             	mov    edx,DWORD PTR [ebp-0x4]
+ 804819e:	8b 45 08             	mov    eax,DWORD PTR [ebp+0x8]
+ 80481a1:	01 d0                	add    eax,edx
+ 80481a3:	c6 00 00             	mov    BYTE PTR [eax],0x0
+ 80481a6:	83 45 fc 01          	add    DWORD PTR [ebp-0x4],0x1
+ 80481aa:	83 7d fc 20          	cmp    DWORD PTR [ebp-0x4],0x20
+ 80481ae:	7e eb                	jle    0x804819b
+ 80481b0:	b8 03 00 00 00       	mov    eax,0x3
+ 80481b5:	bb 00 00 00 00       	mov    ebx,0x0
+ 80481ba:	8b 4d 08             	mov    ecx,DWORD PTR [ebp+0x8]
+ 80481bd:	ba 20 00 00 00       	mov    edx,0x20
+ 80481c2:	cd 80                	int    0x80
+ 80481c4:	90                   	nop
+ 80481c5:	c9                   	leave  
+ 80481c6:	c3                   	ret    
+ 80481c7:	55                   	push   ebp
+ 80481c8:	89 e5                	mov    ebp,esp
+ 80481ca:	83 ec 04             	sub    esp,0x4
+ 80481cd:	c7 45 fc 44 84 04 08 	mov    DWORD PTR [ebp-0x4],0x8048444
+ 80481d4:	b8 04 00 00 00       	mov    eax,0x4
+ 80481d9:	bb 01 00 00 00       	mov    ebx,0x1
+ 80481de:	8b 4d fc             	mov    ecx,DWORD PTR [ebp-0x4]
+ 80481e1:	ba 22 00 00 00       	mov    edx,0x22
+ 80481e6:	cd 80                	int    0x80
+ 80481e8:	b8 01 00 00 00       	mov    eax,0x1
+ 80481ed:	bb 00 00 00 00       	mov    ebx,0x0
+ 80481f2:	cd 80                	int    0x80
+ 80481f4:	90                   	nop
+ 80481f5:	c9                   	leave  
+ 80481f6:	c3                   	ret    
+ 80481f7:	55                   	push   ebp
+ 80481f8:	89 e5                	mov    ebp,esp
+ 80481fa:	83 ec 08             	sub    esp,0x8
+ 80481fd:	c7 45 fc 67 84 04 08 	mov    DWORD PTR [ebp-0x4],0x8048467
+ 8048204:	c7 45 f8 6e 84 04 08 	mov    DWORD PTR [ebp-0x8],0x804846e
+ 804820b:	b8 04 00 00 00       	mov    eax,0x4
+ 8048210:	bb 01 00 00 00       	mov    ebx,0x1
+ 8048215:	8b 4d fc             	mov    ecx,DWORD PTR [ebp-0x4]
+ 8048218:	ba 06 00 00 00       	mov    edx,0x6
+ 804821d:	cd 80                	int    0x80
+ 804821f:	b8 04 00 00 00       	mov    eax,0x4
+ 8048224:	bb 01 00 00 00       	mov    ebx,0x1
+ 8048229:	8b 4d 08             	mov    ecx,DWORD PTR [ebp+0x8]
+ 804822c:	ba 20 00 00 00       	mov    edx,0x20
+ 8048231:	cd 80                	int    0x80
+ 8048233:	b8 04 00 00 00       	mov    eax,0x4
+ 8048238:	bb 01 00 00 00       	mov    ebx,0x1
+ 804823d:	8b 4d f8             	mov    ecx,DWORD PTR [ebp-0x8]
+ 8048240:	ba 02 00 00 00       	mov    edx,0x2
+ 8048245:	cd 80                	int    0x80
+ 8048247:	90                   	nop
+ 8048248:	c9                   	leave  
+ 8048249:	c3                   	ret    
+ 804824a:	55                   	push   ebp
+ 804824b:	89 e5                	mov    ebp,esp
+ 804824d:	83 ec 0c             	sub    esp,0xc
+ 8048250:	8b 45 0c             	mov    eax,DWORD PTR [ebp+0xc]
+ 8048253:	01 c0                	add    eax,eax
+ 8048255:	89 45 fc             	mov    DWORD PTR [ebp-0x4],eax
+ 8048258:	8b 55 08             	mov    edx,DWORD PTR [ebp+0x8]
+ 804825b:	8b 45 fc             	mov    eax,DWORD PTR [ebp-0x4]
+ 804825e:	01 d0                	add    eax,edx
+ 8048260:	0f b6 00             	movzx  eax,BYTE PTR [eax]
+ 8048263:	3c 39                	cmp    al,0x39
+ 8048265:	7e 16                	jle    0x804827d
+ 8048267:	8b 55 08             	mov    edx,DWORD PTR [ebp+0x8]
+ 804826a:	8b 45 fc             	mov    eax,DWORD PTR [ebp-0x4]
+ 804826d:	01 d0                	add    eax,edx
+ 804826f:	0f b6 00             	movzx  eax,BYTE PTR [eax]
+ 8048272:	0f be c0             	movsx  eax,al
+ 8048275:	83 e8 57             	sub    eax,0x57
+ 8048278:	83 e0 0f             	and    eax,0xf
+ 804827b:	eb 11                	jmp    0x804828e
+ 804827d:	8b 55 08             	mov    edx,DWORD PTR [ebp+0x8]
+ 8048280:	8b 45 fc             	mov    eax,DWORD PTR [ebp-0x4]
+ 8048283:	01 d0                	add    eax,edx
+ 8048285:	0f b6 00             	movzx  eax,BYTE PTR [eax]
+ 8048288:	0f be c0             	movsx  eax,al
+ 804828b:	83 e0 0f             	and    eax,0xf
+ 804828e:	89 45 f8             	mov    DWORD PTR [ebp-0x8],eax
+ 8048291:	8b 45 fc             	mov    eax,DWORD PTR [ebp-0x4]
+ 8048294:	8d 50 01             	lea    edx,[eax+0x1]
+ 8048297:	8b 45 08             	mov    eax,DWORD PTR [ebp+0x8]
+ 804829a:	01 d0                	add    eax,edx
+ 804829c:	0f b6 00             	movzx  eax,BYTE PTR [eax]
+ 804829f:	3c 39                	cmp    al,0x39
+ 80482a1:	7e 19                	jle    0x80482bc
+ 80482a3:	8b 45 fc             	mov    eax,DWORD PTR [ebp-0x4]
+ 80482a6:	8d 50 01             	lea    edx,[eax+0x1]
+ 80482a9:	8b 45 08             	mov    eax,DWORD PTR [ebp+0x8]
+ 80482ac:	01 d0                	add    eax,edx
+ 80482ae:	0f b6 00             	movzx  eax,BYTE PTR [eax]
+ 80482b1:	0f be c0             	movsx  eax,al
+ 80482b4:	83 e8 57             	sub    eax,0x57
+ 80482b7:	83 e0 0f             	and    eax,0xf
+ 80482ba:	eb 14                	jmp    0x80482d0
+ 80482bc:	8b 45 fc             	mov    eax,DWORD PTR [ebp-0x4]
+ 80482bf:	8d 50 01             	lea    edx,[eax+0x1]
+ 80482c2:	8b 45 08             	mov    eax,DWORD PTR [ebp+0x8]
+ 80482c5:	01 d0                	add    eax,edx
+ 80482c7:	0f b6 00             	movzx  eax,BYTE PTR [eax]
+ 80482ca:	0f be c0             	movsx  eax,al
+ 80482cd:	83 e0 0f             	and    eax,0xf
+ 80482d0:	89 45 f4             	mov    DWORD PTR [ebp-0xc],eax
+ 80482d3:	8b 45 f8             	mov    eax,DWORD PTR [ebp-0x8]
+ 80482d6:	c1 e0 04             	shl    eax,0x4
+ 80482d9:	0b 45 f4             	or     eax,DWORD PTR [ebp-0xc]
+ 80482dc:	c9                   	leave  
+ 80482dd:	c3                   	ret    
+ 80482de:	55                   	push   ebp
+ 80482df:	89 e5                	mov    ebp,esp
+ 80482e1:	83 ec 04             	sub    esp,0x4
+ 80482e4:	8b 45 0c             	mov    eax,DWORD PTR [ebp+0xc]
+ 80482e7:	01 c0                	add    eax,eax
+ 80482e9:	89 45 fc             	mov    DWORD PTR [ebp-0x4],eax
+ 80482ec:	8b 55 08             	mov    edx,DWORD PTR [ebp+0x8]
+ 80482ef:	8b 45 fc             	mov    eax,DWORD PTR [ebp-0x4]
+ 80482f2:	01 d0                	add    eax,edx
+ 80482f4:	8b 55 10             	mov    edx,DWORD PTR [ebp+0x10]
+ 80482f7:	81 e2 f0 00 00 00    	and    edx,0xf0
+ 80482fd:	81 fa 90 00 00 00    	cmp    edx,0x90
+ 8048303:	76 0e                	jbe    0x8048313
+ 8048305:	8b 55 10             	mov    edx,DWORD PTR [ebp+0x10]
+ 8048308:	c1 ea 04             	shr    edx,0x4
+ 804830b:	83 e2 0f             	and    edx,0xf
+ 804830e:	83 c2 57             	add    edx,0x57
+ 8048311:	eb 0c                	jmp    0x804831f
+ 8048313:	8b 55 10             	mov    edx,DWORD PTR [ebp+0x10]
+ 8048316:	c1 ea 04             	shr    edx,0x4
+ 8048319:	83 e2 0f             	and    edx,0xf
+ 804831c:	83 c2 30             	add    edx,0x30
+ 804831f:	88 10                	mov    BYTE PTR [eax],dl
+ 8048321:	8b 45 fc             	mov    eax,DWORD PTR [ebp-0x4]
+ 8048324:	8d 50 01             	lea    edx,[eax+0x1]
+ 8048327:	8b 45 08             	mov    eax,DWORD PTR [ebp+0x8]
+ 804832a:	01 d0                	add    eax,edx
+ 804832c:	8b 55 10             	mov    edx,DWORD PTR [ebp+0x10]
+ 804832f:	83 e2 0f             	and    edx,0xf
+ 8048332:	83 fa 09             	cmp    edx,0x9
+ 8048335:	76 0b                	jbe    0x8048342
+ 8048337:	8b 55 10             	mov    edx,DWORD PTR [ebp+0x10]
+ 804833a:	83 e2 0f             	and    edx,0xf
+ 804833d:	83 c2 57             	add    edx,0x57
+ 8048340:	eb 09                	jmp    0x804834b
+ 8048342:	8b 55 10             	mov    edx,DWORD PTR [ebp+0x10]
+ 8048345:	83 e2 0f             	and    edx,0xf
+ 8048348:	83 c2 30             	add    edx,0x30
+ 804834b:	88 10                	mov    BYTE PTR [eax],dl
+ 804834d:	90                   	nop
+ 804834e:	c9                   	leave  
+ 804834f:	c3                   	ret    
+ 8048350:	55                   	push   ebp
+ 8048351:	89 e5                	mov    ebp,esp
+ 8048353:	53                   	push   ebx
+ 8048354:	81 ec 8c 00 00 00    	sub    esp,0x8c
+ 804835a:	8d 85 70 ff ff ff    	lea    eax,[ebp-0x90]
+ 8048360:	50                   	push   eax
+ 8048361:	e8 26 fe ff ff       	call   0x804818c
+ 8048366:	83 c4 04             	add    esp,0x4
+ 8048369:	c6 45 90 00          	mov    BYTE PTR [ebp-0x70],0x0
+ 804836d:	8d 45 91             	lea    eax,[ebp-0x6f]
+ 8048370:	50                   	push   eax
+ 8048371:	68 74 84 04 08       	push   0x8048474
+ 8048376:	e8 d7 fd ff ff       	call   0x8048152
+ 804837b:	83 c4 08             	add    esp,0x8
+ 804837e:	8d 45 91             	lea    eax,[ebp-0x6f]
+ 8048381:	83 c0 21             	add    eax,0x21
+ 8048384:	50                   	push   eax
+ 8048385:	68 98 84 04 08       	push   0x8048498
+ 804838a:	e8 c3 fd ff ff       	call   0x8048152
+ 804838f:	83 c4 08             	add    esp,0x8
+ 8048392:	8d 45 91             	lea    eax,[ebp-0x6f]
+ 8048395:	83 c0 42             	add    eax,0x42
+ 8048398:	50                   	push   eax
+ 8048399:	68 bc 84 04 08       	push   0x80484bc
+ 804839e:	e8 af fd ff ff       	call   0x8048152
+ 80483a3:	83 c4 08             	add    esp,0x8
+ 80483a6:	c7 45 f8 00 00 00 00 	mov    DWORD PTR [ebp-0x8],0x0
+ 80483ad:	eb 48                	jmp    0x80483f7
+ 80483af:	ff 75 f8             	push   DWORD PTR [ebp-0x8]
+ 80483b2:	8d 45 91             	lea    eax,[ebp-0x6f]
+ 80483b5:	50                   	push   eax
+ 80483b6:	e8 8f fe ff ff       	call   0x804824a
+ 80483bb:	83 c4 08             	add    esp,0x8
+ 80483be:	89 c3                	mov    ebx,eax
+ 80483c0:	b8 0f 00 00 00       	mov    eax,0xf
+ 80483c5:	2b 45 f8             	sub    eax,DWORD PTR [ebp-0x8]
+ 80483c8:	50                   	push   eax
+ 80483c9:	8d 45 91             	lea    eax,[ebp-0x6f]
+ 80483cc:	83 c0 21             	add    eax,0x21
+ 80483cf:	50                   	push   eax
+ 80483d0:	e8 75 fe ff ff       	call   0x804824a
+ 80483d5:	83 c4 08             	add    esp,0x8
+ 80483d8:	31 d8                	xor    eax,ebx
+ 80483da:	89 45 f4             	mov    DWORD PTR [ebp-0xc],eax
+ 80483dd:	8b 45 f4             	mov    eax,DWORD PTR [ebp-0xc]
+ 80483e0:	50                   	push   eax
+ 80483e1:	ff 75 f8             	push   DWORD PTR [ebp-0x8]
+ 80483e4:	8d 45 91             	lea    eax,[ebp-0x6f]
+ 80483e7:	83 c0 42             	add    eax,0x42
+ 80483ea:	50                   	push   eax
+ 80483eb:	e8 ee fe ff ff       	call   0x80482de
+ 80483f0:	83 c4 0c             	add    esp,0xc
+ 80483f3:	83 45 f8 01          	add    DWORD PTR [ebp-0x8],0x1
+ 80483f7:	83 7d f8 0f          	cmp    DWORD PTR [ebp-0x8],0xf
+ 80483fb:	7e b2                	jle    0x80483af
+ 80483fd:	8d 45 91             	lea    eax,[ebp-0x6f]
+ 8048400:	83 c0 42             	add    eax,0x42
+ 8048403:	50                   	push   eax
+ 8048404:	8d 85 70 ff ff ff    	lea    eax,[ebp-0x90]
+ 804840a:	50                   	push   eax
+ 804840b:	e8 03 fd ff ff       	call   0x8048113
+ 8048410:	83 c4 08             	add    esp,0x8
+ 8048413:	85 c0                	test   eax,eax
+ 8048415:	74 11                	je     0x8048428
+ 8048417:	8d 45 91             	lea    eax,[ebp-0x6f]
+ 804841a:	83 c0 42             	add    eax,0x42
+ 804841d:	50                   	push   eax
+ 804841e:	e8 d4 fd ff ff       	call   0x80481f7
+ 8048423:	83 c4 04             	add    esp,0x4
+ 8048426:	eb 05                	jmp    0x804842d
+ 8048428:	e8 9a fd ff ff       	call   0x80481c7
+ 804842d:	b8 01 00 00 00       	mov    eax,0x1
+ 8048432:	bb 00 00 00 00       	mov    ebx,0x0
+ 8048437:	cd 80                	int    0x80
+ 8048439:	b8 00 00 00 00       	mov    eax,0x0
+ 804843e:	8b 5d fc             	mov    ebx,DWORD PTR [ebp-0x4]
+ 8048441:	c9                   	leave  
+ 8048442:	c3                   	ret    
